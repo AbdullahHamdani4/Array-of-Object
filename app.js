@@ -18,16 +18,3 @@
 // }
 // let ob1=new constructor("Abdullah",1999,"hasna",5,"biala",4 )
 // console.log(ob1);
-
-let checks=document.getElementsByClassName("input")
-let activities=[]
-function check(e) {
-    e.preventDefault()
-    console.log(checks[1].checked)
-    for(let i=0; i<checks.length;i++){
-    if(checks[i].checked){
-        activities.push(checks[i].previousElementSibling.innerText)
-    }
-}
-console.log(activities);
-}
