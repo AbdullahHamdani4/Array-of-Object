@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+  /* overflow-y: hidden; */
+}
 .container {}
 
 .card{
@@ -24,3 +26,5 @@
  .hide{
     display: none;
  }
+
+  

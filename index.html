@@ -5,26 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array of Objects</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQprZx99syYUFiB4Bs20EY50g8ls4WXJSp-Yw&s" alt="">
-            </div>
-            <div class="img-description">
-                <h3>Addidas Collection</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus perspiciatis doloribus iusto.</p>
-            </div>
-            <button onclick="showReviews()">Show Reviews</button>
-            <div class="reviews hide" id="reviews">
-               
-            </div>
-        </div>
+    <div class="card">
+  <div class="card-img">
+    <img src="shoes.jpg" alt="Product">
+  </div>
+
+  <div class="card-body">
+    <h3 class="title">Adidas Collection</h3>
+    <p class="price">Rs 4,999</p>
+    <p class="desc">
+      Comfortable everyday shoes with premium build quality.
+    </p>
+
+    <button class="toggle-reviews">Show reviews</button>
+  </div>
+
+  <div class="reviews">
+    <div class="review">
+      <span class="name">Babar Azam</span>
+      <p class="text">Behtareen joote</p>
     </div>
+
+    <div class="review">
+      <span class="name">Safeer Azam</span>
+      <p class="text">Alaa joote</p>
+    </div>
+
+    <button class="add-review">Add review</button>
+  </div>
+</div>
+
     <script src="app.js"></script>
 </body>
 
