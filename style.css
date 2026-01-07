@@ -5,3 +5,8 @@
 }
 
 .container {}
+
+.card{
+    border: 1px solid;
+    min-height: ;
+}
