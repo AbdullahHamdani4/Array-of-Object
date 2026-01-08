@@ -9,8 +9,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: "Oswald";
+   font-family: "Oswald";
  }
 .card {
   width: 340px;
@@ -55,14 +54,15 @@ body{
   /* display: none; */
   overflow: hidden;
   font-family: "Roboto Slab";
-  padding-bottom: 12px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   transition: 0.3s ease-in-out;
 }
 .reviews.open{
-  display: block;
+  /* display: block; */
   max-height: 500px;
+  max-height: auto;
+  padding-bottom: 12px;
 }
 .combination{
   display: flex;
