@@ -54,5 +54,17 @@ function showAddReview(params) {
 }
 function addReview(e) {
     e.preventDefault()
-    
+    let value=`
+    <div class="review">
+        <p class="name">Abdullah Hamdani</p>
+        <div class="combination">
+          <span class="comment">${addComment.value}</span>
+          <span class="rating">${addRating.value}</span>
+        </div>
+      </div>
+   `
+//    let lastElement=reviewsCont.lastElementChild
+   reviewsCont.insertAdjacentHTML("afterbegin",value)
+     full.classList.toggle("hide")
+
 }
