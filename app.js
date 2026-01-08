@@ -42,10 +42,10 @@ function showReviews(params) {
 }
 // let ob1 = new constructor("Abdullah", 1999, "hasna", 5, "biala", 4)
 // console.log(ob1);
-function show(params) {
+function showReviews(params) {
     reviewsCont.classList.toggle("open")
-    reviewsCont.children[0].children[0].innerText=feebacks[0].name
-    reviewsCont.children[0].children[1].innerText=feebacks[0].description
-    reviewsCont.children[1].children[0].innerText=feebacks[1].name
-    reviewsCont.children[1].children[1].innerText=feebacks[1].description
+    // reviewsCont.children[0].children[0].innerText=feebacks[0].name
+    // reviewsCont.children[0].children[1].innerText=feebacks[0].description
+    // reviewsCont.children[1].children[0].innerText=feebacks[1].name
+    // reviewsCont.children[1].children[1].innerText=feebacks[1].description
 }
