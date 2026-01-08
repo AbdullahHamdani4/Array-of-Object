@@ -11,6 +11,8 @@ body{
   align-items: center;
    font-family: "Oswald";
  }
+
+ /* Card Desgin  */
 .card {
   width: 340px;
   background-color: #0f172a;
