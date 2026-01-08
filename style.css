@@ -50,6 +50,6 @@ body{
 .reviews{
   background: #020617;
   max-height: 0;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
