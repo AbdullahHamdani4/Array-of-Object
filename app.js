@@ -8,17 +8,20 @@
 //     ]
 // }
 // console.log(product1);
-function Constructor(nam, price, review1Name, review1Rating, review2Name, review2Rating) {
-    this.name = nam
-    this.price = price
-    this.review = [
-        { nam: review1Name, rating: review1Rating },
-        { nam: review2Name, rating: review2Rating }
-    ]
-}
+let btnRe=document.querySelector(".toggle-reviews")
+let reviewsCont=document.querySelector(".reviews")
+// console.log();
+// function Constructor(nam, price, review1Name, review1Rating, review2Name, review2Rating) {
+//     this.name = nam
+//     this.price = price
+//     this.review = [
+//         { nam: review1Name, rating: review1Rating },
+//         { nam: review2Name, rating: review2Rating }
+//     ]
+// }
 let feebacks = [
-    { name: "babar azam", description: "Behtareen joote", rating: "5star" },
-    { name: "Safee azam", description: "Alaa joote", rating: "3star" },
+    { name: "Alvaro Morata", description: "What a nice pair of shoes", rating: "5star" },
+    { name: "Cristiano Ronaldo", description: "Alaa joote", rating: "3star" },
     { name: "Abdul azam", description: "Harami joote", rating: "1star" }
 ]
 function showReviews(params) {
@@ -33,3 +36,10 @@ function showReviews(params) {
 }
 // let ob1 = new constructor("Abdullah", 1999, "hasna", 5, "biala", 4)
 // console.log(ob1);
+function show(params) {
+    reviewsCont.classList.toggle("open")
+    reviewsCont.children[0].children[0].innerText=feebacks[0].name
+    reviewsCont.children[0].children[1].innerText=feebacks[0].description
+    reviewsCont.children[1].children[0].innerText=feebacks[1].name
+    reviewsCont.children[1].children[1].innerText=feebacks[1].description
+}

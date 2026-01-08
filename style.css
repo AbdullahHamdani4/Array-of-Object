@@ -2,29 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-  /* overflow-y: hidden; */
-}
-.container {}
+} 
 
-.card{
-    border: 1px solid;
-    width: 300px;
-    min-height: 300px;
- }
- .img{
-    height: 150px;
- }
- .img img{
-    /* width: 100%; */
-    height: 100%;
- }
- .img-description{
-    margin-bottom: 20px;
- }
- .hide{
-    display: none;
- }
+.card {
+  max-width: 360px;
+  width: 92%;
+  background: #0f172a; /* dark slate */
+  border-radius: 16px;
+  overflow: hidden; /* important for image + slide later */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  margin: 40px auto;
+  color: #e5e7eb;
+}
 
-  
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-body {
+  padding: 16px;
+}
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.price {
+  margin: 6px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #22c55e; /* green = price signal */
+}
+
+.desc {
+  margin: 8px 0 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #cbd5f5;
+}
+.toggle-reviews {
+  width: 100%;
+  padding: 10px;
+  background: #1e293b;
+  color: #e5e7eb;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle-reviews:hover {
+  background: #334155;
+}
+.reviews {
+  padding: 0 16px;
+  background: #020617;
+  border-top: 1px solid rgba(255,255,255,0.06);
+   transition: max-height 0.35s ease-in-out;
+
+  /* hidden state */
+  max-height: 0;
+  /* overflow: hidden; */
+}
+.reviews.open {
+  max-height: 500px;
+}
+.review {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.
+.review-2{
+  border-bottom: none;
+}
+.review .name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f3f4f6;
+}
+
+.review .text {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #cbd5f5;
+}
+.add-review {
+  width: 100%;
+  margin: 12px 0 16px;
+  padding: 10px;
+  background: transparent;
+  color: #93c5fd;
+  border: 1px dashed rgba(147,197,253,0.4);
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-review:hover {
+  background: rgba(147,197,253,0.1);
+}
