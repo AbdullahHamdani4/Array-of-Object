@@ -49,8 +49,11 @@ body{
 }
 .reviews{
   background: #020617;
-  max-height: 0;
-  overflow: hidden;
-  
+  /* max-height: 0; */
+  /* overflow: hidden; */
+}
+.reviews .review{
+ display: flex;
+ flex-direction: column;
 }
 
