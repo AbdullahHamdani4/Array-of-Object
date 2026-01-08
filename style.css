@@ -6,21 +6,27 @@
   box-sizing: border-box;
 }
 body{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
    font-family: "Oswald";
  }
 
  /* From Uiverse.io by nathann09 */ 
+ 
  .full{
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e4e2e2;
+  border: 1px solid;
+ }
+ .hide{
+  display: none;
  }
 .form {
   background-color: #fff;

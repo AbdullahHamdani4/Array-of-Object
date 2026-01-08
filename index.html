@@ -13,25 +13,21 @@
 <body>
    <!-- From Uiverse.io by nathann09 --> 
 
-    <div class="full">
-      <form class="form">
-       <p class="form-title">Sign in to your account</p>
+    <div class="full hide" id="full">
+      <form class="form" onsubmit="addReview(event)">
+       <p class="form-title">Add a review</p>
         <div class="input-container">
-          <input type="email" placeholder="Enter email">
+          <input type="email" placeholder="Enter comment" id="add-comment">
           <span>
           </span>
       </div>
       <div class="input-container">
-          <input type="password" placeholder="Enter password">
+          <input type="password" placeholder="Enter rating in stars" id="add-rating">
         </div>
          <button type="submit" class="submit">
-        Sign in
+        Add review
       </button>
-
-      <p class="signup-link">
-        No account?
-        <a href="">Sign up</a>
-      </p>
+ 
    </form>
     </div>
 
@@ -76,7 +72,7 @@
           <span class="rating">★★★</span>
         </div>
       </div>
-      <button class="add-review" onclick="addReview()">Add review</button>
+      <button class="add-review" onclick="showAddReview()">Add review</button>
     </div>
   </div>
 

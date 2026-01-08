@@ -49,3 +49,10 @@ function showReviews(params) {
     // reviewsCont.children[1].children[0].innerText=feebacks[1].name
     // reviewsCont.children[1].children[1].innerText=feebacks[1].description
 }
+function showAddReview(params) {
+    full.classList.toggle("hide")
+}
+function addReview(e) {
+    e.preventDefault()
+    
+}
