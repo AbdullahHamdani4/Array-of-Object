@@ -7,11 +7,17 @@
 //         { name: "Bilal", Rating: "3Stars", text: "Haramiiiiiiiii" }
 //     ]
 // }
+// background: ; /* dark slate */ carddd
+  // /* green = price signal */
+  //  
+//  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+//https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU="
+
 // console.log(product1);
 let btnRe=document.querySelector(".toggle-reviews")
 let reviewsCont=document.querySelector(".reviews")
 // console.log();
-// function Constructor(nam, price, review1Name, review1Rating, review2Name, review2Rating) {
+// function Constructor(nam, price, review1Name, review1Rating, review2Name, a) {
 //     this.name = nam
 //     this.price = price
 //     this.review = [
