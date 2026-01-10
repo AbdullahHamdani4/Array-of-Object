@@ -8,14 +8,22 @@
 //     ]
 // }
 // background: ; /* dark slate */ carddd
-  // /* green = price signal */
-  //  
+// /* green = price signal */
+//  
 //  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 //https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU="
 
 // console.log(product1);
-let btnRe=document.querySelector(".toggle-reviews")
-let reviewsCont=document.querySelector(".reviews")
+let btnRe = document.querySelector(".toggle-reviews")
+let reviewsCont = document.querySelector(".reviews")
+let rating = document.querySelector(".rating").getElementsByTagName("input")
+console.log(rating);
+for (let i = 0; i < rating.length; i++) {
+//    console.log("hello");
+if(rating[i].checked){
+    
+}
+}
 // console.log();
 // function Constructor(nam, price, review1Name, review1Rating, review2Name, a) {
 //     this.name = nam
@@ -54,7 +62,7 @@ function showAddReview(params) {
 }
 function addReview(e) {
     e.preventDefault()
-    let value=`
+    let value = `
     <div class="review">
         <p class="name">Abdullah Hamdani</p>
         <div class="combination">
@@ -63,8 +71,8 @@ function addReview(e) {
         </div>
       </div>
    `
-//    let lastElement=reviewsCont.lastElementChild
-   reviewsCont.insertAdjacentHTML("afterbegin",value)
-     full.classList.toggle("hide")
+    //    let lastElement=reviewsCont.lastElementChild
+    reviewsCont.insertAdjacentHTML("afterbegin", value)
+    full.classList.toggle("hide")
 
 }

@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-   font-family: "Oswald";
- }
+  font-family: "Oswald";
+}
 
- /* From Uiverse.io by nathann09 */ 
- 
- .full{
+/* From Uiverse.io by nathann09 */
+
+.full {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position:absolute;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e4e2e2;
   border: 1px solid;
- }
- .hide{
+}
+
+.hide {
   display: none;
- }
+}
+
 .form {
   background-color: #fff;
   display: block;
@@ -49,7 +53,8 @@ body{
   position: relative;
 }
 
-.input-container input, .form button {
+.input-container input,
+.form button {
   outline: none;
   border: 1px solid #e5e7eb;
   margin: 8px 0;
@@ -93,7 +98,7 @@ body{
   text-decoration: underline;
 }
 
-/* From Uiverse.io by PriyanshuGupta28 */ 
+/* From Uiverse.io by PriyanshuGupta28 */
 .rating {
   display: inline-block;
 }
@@ -114,16 +119,16 @@ body{
   font-size: 30px;
 }
 
-.rating input:checked ~ label,
+.rating input:checked~label,
 .rating label:hover,
-.rating label:hover ~ label {
+.rating label:hover~label {
   color: #6f00ff;
   transition: color 0.3s;
 }
 
 
 
- /* Card Desgin  */
+/* Card Desgin  */
 .card {
   width: 340px;
   background-color: #0f172a;
@@ -132,26 +137,31 @@ body{
   color: white;
   font-size: 14px;
 }
-.img img{
+
+.img img {
   width: 100%;
   /* border-radius: 15px; */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.product-description{
+
+.product-description {
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-.product-description .title{
+
+.product-description .title {
   font-weight: 600;
   font-size: 18px;
 }
-.product-description .price{
+
+.product-description .price {
   color: #22c55e;
 }
-.product-description button{
+
+.product-description button {
   padding: 10px;
   /* width: ; */
   border-radius: 12px;
@@ -160,7 +170,8 @@ body{
   color: white;
   font-size: 16px;
 }
-.reviews{
+
+.reviews {
   background: #020617;
   text-align: center;
   max-height: 0px;
@@ -171,35 +182,40 @@ body{
   border-bottom-right-radius: 15px;
   transition: 0.3s ease-in-out;
 }
-.reviews.open{
+
+.reviews.open {
   /* display: block; */
   max-height: 500px;
   max-height: auto;
   padding-bottom: 12px;
 }
-.combination{
+
+.combination {
   display: flex;
   justify-content: space-between;
   /* margin: 0 5px; */
   font-size: 14px;
   color: rgb(201, 199, 199);
 }
-.reviews .review{
- display: flex;
- flex-direction: column;
- padding: 10px;
- gap: 0.2rem;
- font-size: 16px;
- font-weight: 600;
- /* text-align: center; */
- border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
- }
-.reviews .review .name{
+.reviews .review {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 0.2rem;
+  font-size: 16px;
+  font-weight: 600;
+  /* text-align: center; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+}
+
+.reviews .review .name {
   text-decoration: underline;
   text-underline-offset: 3px;
- }
-.reviews button{
+}
+
+.reviews button {
   margin-top: 14px;
   width: 90%;
   padding: 8px;
@@ -209,7 +225,5 @@ body{
   background-color: #020617;
   color: #93c5fd;
   border: 1px dotted rgba(147, 197, 253, 0.4);
-   font-size: 16px;
+  font-size: 16px;
 }
- 
-
